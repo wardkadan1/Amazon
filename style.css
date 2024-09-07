@@ -365,11 +365,21 @@ main {
   position: relative;
 }
 
-.big_pic img {
+.big_pic #show1.default {
+  width: 613px;
+  height: 613px;
+  object-fit: contain;
+}
+
+.big_pic img:not(.default) {
   display: none;
   width: 613px;
   height: 613px;
   object-fit: contain;
+}
+
+.big_pic:has(img:target:not(.default)) .default {
+  display: none;
 }
 
 #show1:target,
