@@ -368,14 +368,14 @@ main {
 }
 
 .big_pic #show1.default {
-  width: 70%;
+  width: 68%;
   height: 100%;
   object-fit: contain;
 }
 
 .big_pic img:not(.default) {
   display: none;
-  width: 70%;
+  width: 88%;
   height: 100%;
   object-fit: contain;
 }
